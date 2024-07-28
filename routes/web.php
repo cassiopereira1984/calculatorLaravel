@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-// use ruta controller
+use App\Http\Controllers\CalculadoraController;
 
-Route::get('/', [::class, 'index']);
-Route::post('/calculator', [::class, 'calculator']);
+Route::get('/', [CalculatorController::class, 'index']);
+Route::post('/calculator', [CalculatorController::class, 'calculator']);

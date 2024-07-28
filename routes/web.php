@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+// use ruta controller
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [::class, 'index']);
+Route::post('/calculator', [::class, 'calculator']);
